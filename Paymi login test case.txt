@@ -1,0 +1,135 @@
+Login Tests - Paymi
+
+
+1.1 - Successful login
+
+Preconditions:
+
+* User is not logged in
+* An account exists that uses the credentials used in this test
+
+Steps:
+
+1. Visit "https://staging.paymi.com/users/sign_in"
+2. Enter valid email
+3. Enter valid password
+3. Click "Sign in"
+
+Expected results:
+
+* User is successfuly signed in
+* User is redirected to "https://staging.paymi.com/dashboard/accounts"
+* No error messages are displayed
+
+---
+
+1.2 - Incorrect password
+
+Preconditions:
+
+* User is not logged in
+* No account exists that uses the credentials used in this test
+
+Steps:
+
+1. Visit "https://staging.paymi.com/users/sign_in"
+2. Enter valid email
+3. Enter invalid password
+3. Click "Sign in"
+
+Expected results:
+
+* User is not signed in
+* User remains on "https://staging.paymi.com/users/sign_in"
+* Error message "Invalid email or password" is displayed
+
+---
+
+1.3 - Non-esisting user
+
+Preconditions:
+
+* User is not logged in
+* No account exists that uses the credentials used in this test
+
+Steps:
+
+1. Visit "https://staging.paymi.com/users/sign_in"
+2. Enter invalid email
+3. Enter any password
+3. Click "Sign in"
+
+Expected results:
+
+* User is not signed in
+* User remains on "https://staging.paymi.com/users/sign_in"
+* Error message "Invalid email address or password" is displayed
+
+---
+
+1.4 - Empty fields - email and password
+
+Preconditions:
+
+* User is not logged in
+
+Steps:
+
+1. Visit "https://staging.paymi.com/users/sign_in"
+2. Leave email text box empty
+3. Leave password box empty
+4. Click "Sign in"
+
+Expected results:
+
+* User is not signed in
+* User remains on "https://staging.paymi.com/users/sign_in"
+* Error message "Email can't be blank" is displayed
+* Error message "Password can't be blank" is displayed
+
+---
+
+1.5 - Empty fields - password
+
+Preconditions:
+
+* User is not logged in
+
+Steps:
+
+1. Visit "https://staging.paymi.com/users/sign_in"
+2. Enter any email
+3. Leave password box empty
+4. Click "Sign in"
+
+
+Expected results:
+
+* User is not signed in
+* User remains on "https://staging.paymi.com/users/sign_in"
+* Error message "Password can't be blank" is displayed
+
+---
+
+1.6 - Empty fields - email
+
+Preconditions:
+
+* User is not logged in
+
+Steps:
+
+1. Visit "https://staging.paymi.com/users/sign_in"
+2. Leave email text box empty
+3. Enter any password
+4. Click "Sign in"
+
+
+Expected results:
+
+* User is not signed in
+* User remains on "https://staging.paymi.com/users/sign_in"
+* Error message "Email can't be blank" is displayed
+
+
+
