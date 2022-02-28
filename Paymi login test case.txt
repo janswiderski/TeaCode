@@ -28,7 +28,7 @@ Expected results:
 Preconditions:
 
 * User is not logged in
-* No account exists that uses the credentials used in this test
+* An account exists that uses the email address used in this test
 
 Steps:
 
@@ -45,7 +45,7 @@ Expected results:
 
 ---
 
-1.3 - Non-esisting user
+1.3 - Non-existing user
 
 Preconditions:
 
